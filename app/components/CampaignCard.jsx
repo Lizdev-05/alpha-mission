@@ -42,11 +42,14 @@ const CampaignCard = ({
 
   return (
     <div className="bg-white shadow-md rounded-lg p-4">
-      <img
-        src="https://as1.ftcdn.net/v2/jpg/03/30/32/28/1000_F_330322889_loyXDVKHBntIFBXuLT6LvqDxmHU9BzZn.jpg"
-        alt="Mission Image"
-        className="rounded-lg w-full object-cover"
-      />
+      <div className="relative group">
+        <img
+          src="https://as1.ftcdn.net/v2/jpg/03/30/32/28/1000_F_330322889_loyXDVKHBntIFBXuLT6LvqDxmHU9BzZn.jpg"
+          alt="Mission Image"
+          className="rounded-lg w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-blue-500 opacity-0 group-hover:opacity-50 transition duration-300 rounded-lg"></div>
+      </div>
       <div className="mt-4">
         <h2 className="text-xl font-semibold text-gray-800">{title}</h2>
         <p className="text-sm text-gray-500">
